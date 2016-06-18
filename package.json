@@ -1,0 +1,22 @@
+{
+  "name": "olivier-projects",
+  "version": "1.0.0",
+  "description": "create indexble list of my projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bredele/olivier-projects.git"
+  },
+  "author": "Olivier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bredele/olivier-projects/issues"
+  },
+  "homepage": "https://github.com/bredele/olivier-projects#readme",
+  "dependencies": {
+    "vomit": "^0.1.0"
+  }
+}

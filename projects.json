@@ -1,0 +1,9 @@
+{
+  "projects" : [{
+    "name" : "brick",
+    "summary" : "mvvm library"
+  }, {
+    "name" : "vomit",
+    "summary" : "hyperscript as stream"  
+  }]
+}
