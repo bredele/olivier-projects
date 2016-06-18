@@ -19,7 +19,7 @@ module.exports = function(data) {
     var keywords = project.keywords;
     var query = project.name + (keywords ? keywords.join('') : '');
     return vomit('li', {
-      class: 'searchable flex',
+      class: 'project searchable flex',
       'data-search': query
     }, [
       vomit('h3', project.name),
