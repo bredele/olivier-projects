@@ -13,7 +13,9 @@ var vomit = require('vomit');
 
 module.exports = function(data) {
   data = data || require('./projects.json');
-  return vomit('ul', data.projects.map(function(project) {
+  return vomit('ul', {
+    class : 'projects'
+  }, data.projects.map(function(project) {
     var keywords = project.keywords;
     var query = project.name + (keywords ? keywords.join('') : '');
     return vomit('li', {
