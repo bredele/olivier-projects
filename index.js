@@ -14,8 +14,10 @@ var vomit = require('vomit');
 module.exports = function(data) {
   data = data || require('./projects.json');
   return vomit('ul', data.projects.map(function(project) {
+    var query = project.name + (project.keywords.join('')|| '');
     return vomit('li', {
-      class: 'flex'
+      class: 'searchable flex',
+      data-search: query
     }, [
       vomit('h3', project.name),
       vomit('p', {
