@@ -13,7 +13,7 @@ var vomit = require('vomit');
 
 module.exports = function(data) {
   data = data || require('./projects.json');
-  return vomit('ul', data.projects.forEach(function(project) {
+  return vomit('ul', data.projects.map(function(project) {
     return vomit('li', {
       class: 'flex'
     }, [
