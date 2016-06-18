@@ -14,7 +14,9 @@ var vomit = require('vomit');
 module.exports = function(data) {
   data = data || require('./projects.json');
   return vomit('ul', data.projects.forEach(function(project) {
-    return vomit('li', [
+    return vomit('li', {
+      class: 'flex'
+    }, [
       vomit('h3', project.name),
       vomit('p', {
         class: 'summary'
