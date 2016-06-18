@@ -15,7 +15,7 @@ module.exports = function(data) {
   data = data || require('./projects.json');
   return vomit('ul', data.projects.map(function(project) {
     var keywords = project.keywords;
-    var query = project.name + keywords ? keywords.join('') : '';
+    var query = project.name + (keywords ? keywords.join('') : '');
     return vomit('li', {
       class: 'searchable flex',
       'data-search': query
